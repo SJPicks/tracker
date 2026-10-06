@@ -1886,14 +1886,48 @@
       onSportFilterChange();
       initFirebase();
     });
-    const firebaseConfig = {
-  apiKey: "AIzaSy...",
-  authDomain: "sjtracker.firebaseapp.com",
-  projectId: "sjtracker",
-  storageBucket: "sjtracker.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "1:123456789:web:abcdef..."
-};
+  <script type="module">
+
+  // Import the functions you need from the SDKs you need
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-analytics.js";
+
+  // TODO: Add SDKs for Firebase products that you want to use
+
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+  // Your web app's Firebase configuration
+
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  const firebaseConfig = {
+
+    apiKey: "AIzaSyDzkTs75YULNOtxTl7E005u1UlfNv3br5o",
+
+    authDomain: "sjtracker-27cf8.firebaseapp.com",
+
+    projectId: "sjtracker-27cf8",
+
+    storageBucket: "sjtracker-27cf8.firebasestorage.app",
+
+    messagingSenderId: "504969168352",
+
+    appId: "1:504969168352:web:15b9cafffa3045e32f1785",
+
+    measurementId: "G-11FEY9RHEN"
+
+  };
+
+
+  // Initialize Firebase
+
+  const app = initializeApp(firebaseConfig);
+
+  const analytics = getAnalytics(app);
+
   </script>
 </body>
 </html>
